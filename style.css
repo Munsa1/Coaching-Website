@@ -104,7 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #8a8080 1px solid;
+    /* border: #8a8080 1px solid; */
     margin-bottom: 25px;
 }
 
