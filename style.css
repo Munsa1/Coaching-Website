@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*Resuable Classes*/
+
+.app-margin {
+  margin: 0 16px;
+}
+
+.app-color {
+  color: #daa520;
+}
+
+.intro {
+  background-image: url('assets/img/services/portrait.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.intro-container span {
+  padding-top: 90%;
+}
+
+.intro-container h1 {
+  color: #fff;
+  padding-top: 90%;
+}
+
+.intro-container p {
+  color: #fff;
+  border: solid 1px#b6b0a2;
+  margin-top: 12px;
+  padding: 8px;
+}
+
+.intro-container button {
+  background-color: #e3e2e0;
+  padding: 8px;
+  margin-top: 12px;
+  border: #a3a3a3 1px solid;
+  margin-bottom: 50px;
+  width: 150px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.services {
+  background-image: url('assets/img/General/misty-smoke-blowing-black-background_23-2148092651.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.services-container h2 {
+  text-align: center;
+  padding-top: 24px;
+  margin-bottom: 20px;
+  color: #e3e2e0;
+
+}
+
+.cards {
+  padding: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: #ffbf00 2px solid;
+  padding: 12px;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  margin-bottom: 30px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffb701;
+  color: #fff;
+}
+
+/*Start of  Gold Animation*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #ffb338;
+  --light-shadow: #77571d;
+  --dark-shadow: #3e2904;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  padding-top: 23px;
+  background: radial-gradient(#000000, #000000);
+  display: grid;
+  grid-template-areas: 'overlap';
+  place-content: center;
+  text-transform: uppercase;
+}
+
+.wrapper > div {
+  background-clip: text;  
+  -webkit-background-clip: text;
+  color: #363833;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  grid-area: overlap;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 4px transparent;
+}
+
+div.bg {
+  background-image: repeating-linear-gradient( 105deg, 
+    var(--gold) 0% , 
+    var(--dark-shadow) 5%,
+    var(--gold) 12%);
+  color: transparent;
+  filter: drop-shadow(5px 15px 15px black);
+  transform: scaleY(1.05);
+  transform-origin: top;
+}
+
+div.fg{
+  background-image: repeating-linear-gradient( 5deg,  
+    var(--gold) 0% , 
+    var(--light-shadow) 23%, 
+    var(--gold) 31%);
+  color: #1e2127;
+  transform: scale(1);
+}
+
+/*End of Animation*/
